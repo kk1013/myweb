@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>연습문제11 - 강아지 블로그 만들기 </title>
+  <!-- 시멘틱 태그 이용 -->
+  <!-- float속성을 이용 -> 나중에 flexbox이용 -->
+  <style>
+    /* 초기화코드 */
+    * {
+      
+      margin: 0; padding: 0;
+      /* float 속성을 사용전에 사용 */
+      overflow: hidden;
+      /* border: 1px solid red; */
+    }
+
+    #wrap{
+      margin: 10px;
+      padding: 30px;
+      width: 1000px;
+      height: 800px;
+    }
+
+    a {
+      /* 밑줄 제거 */
+      text-decoration: none;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nanum+Gothic&display=swap');
+    #header h1 {
+      font-family: 'Dancing Script', cursive;
+      /* 가로 중앙으로 정렬 */
+      text-align: center;
+      /* 세로 중앙으로 정렬 */
+      /* vertical-align: middle; */
+      /* 부모컨테이너와 동일한 높이 */
+      /* line-height: 100px; */
+    }
+
+    #nav{
+      margin: 10px;
+      color:aliceblue;
+      text-align: center;
+      background-color: rgb(170, 168, 168);
+    }
+
+    #aside{
+      float: left;
+      margin: 2px;
+      padding: 20px;
+      border: 1px solid green;
+    }
+
+    #aside > img {
+      width: 150px;
+      height: 150px;
+    }
+
+    #aside > h4 + li{
+      text-align: left;
+    }
+
+    #section{
+      float: left;
+      width: 75%;
+      /* margin: 10px; */
+      padding: 10px;
+      text-align: left;
+    }
+
+    #section > p{
+      font-size: 13px;
+    }
+
+    body {
+      background-color: cyan;
+    }
+
+    #footer{
+      margin: 10px;
+      padding:10px;
+      text-align: center;
+      /* width: 780px; */
+      background-color: rgb(170, 168, 168);
+    }
+
+    #nav a{
+      margin: 10px;
+    }
+
+    #footer a{
+      margin: 10px;
+    }
+
+    #nav a:link{
+      color: white;
+    }
+
+    #nav a:visited{
+      color: white;
+    }
+
+    #footer a:link{
+      color: black;
+    }  
+
+    #footer a:visited{
+      color: black;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+        <h1>골든리트리버 - Golden Retriever</h1>
+    </div>
+    <div id="nav">
+        <a href="#">About</a>
+        <a href="#">History</a>
+        <a href="#">Information</a>
+        <a href="#">SNS</a>
+    </div>
+    <div id="main">
+      
+      <div id="aside">
+          <h4>Golden Retriever</h4>
+          <img src="dog.jpg">
+          <ul>
+            <li>●기본특성</li>
+            <li>●단점</li>
+            <li>●키울 시 주의점</li>
+            <li>●퍼생 혼종견</li>
+          </ul>
+      </div>
+      <div id="section">
+                <h3>Golden Retriever | 골든 리트리버</h3><br>
+                <p>개의 품종 중 하나로, 원산지는 영국의 스코틀랜드 지역이다. 비슷하게 생긴 래브라도 리트리버가 원형이다.
+
+            이름대로 윤기가 흐르는 크림빛 또는 금빛의 풍성한 털이 가장 큰 특징이며 은은하게 귀티가 흐르는 인상이다. 마당이 있는 집이 일반적인 미국과 영국, 또한 영국의 직할 속령이었던 아일랜드, 캐나다, 오스트레일리아나 뉴질랜드에서 자주 볼 수 있는 견종이라고 한다. 신장 51~61cm, 체중 25~40kg 정도이다.
+            
+            대한민국 한정으로는 누렁이, 인절미와 골댕이(=골든 댕댕이)라고도 불린다.# 영미권에서는 너겟이라고 하는 모양. 성격이 온순해서 '천사견'이라는 별명도 있다. 온순한 성미와 똑똑한 것으로 인해 맹인 안내견으로도 유명하다.</p><br>
+
+        <p>시각장애인 안내견으로 유명하며 널리 쓰이는 개이다. 다른 개들도 훈련하면 시각장애인 안내견으로 활용할 수 있지만 뛰어난 사회성, 안내견으로서의 체계적인 공급, 호감형인 외모, 훈련대로 성실하게 따르는 것 등을 평가하면 리트리버 종의 효율성과 탁월함이 매우 뛰어나 애용되고 있다. 일일이 따져보면 안내견으로서의 자질은 모두 최상위권인데, 우선 지능이 높기 때문에 훈련시키기에 용이하며 몸집이 크고 체력이 강해서 때문에 장시간의 임무 수행을 잘 할 수 있고, 만약 긴급상황이 생겼을 시 주인에게 위협을 알리거나 보호할 수 있고, 성격이 개들 중 온순하고 얌전해서 관리가 비교적 쉬우며, 외모가 순해 주변 사람들이 큰 부담 없이 받아들일 수가 있다. 털이 좀 잘 빠지고 날린다는 것 외에는 안내견으로서 단점이라 할 게 없는 수준.</p>
+        <p>리트리버는 원래 사냥개 중에서도 총에 맞은 새를 물어오는 것(Retriever)을 목적으로 교배된 견종이다. 당연히 주인이 총을 쏘기 전에 짖거나, 난리를 피우면 새가 날아서 도망갈 테니 주인이 물어오라는 지시를 내릴 때까지 얌전히 명령에 복종하는 게 체질적으로 몸에 밴 견종이다. 다만 엄연한 대형견이자 사냥개임을 주지해야 안전사고를 방지할 수 있다. 자주 일어나는 일은 아니지만 마음만 먹는다면 사람을 해칠 수 있다. 만약 이빨을 드러내거나 그르릉거리는 적대적인 시그널을 보낸다면 '골든 리트리버이니까 위협만 하겠지' 같은 안일한 마음으로 대하지 말고 충분히 물러나야 한다.</p>
+        <br>
+        <p>참조: 나무위치 - 골든리트리버</p>
+      </div>
+    </div>
+    <div id="footer">
+        <a href="#">Subscribe</a>
+        <a href="#">About Author</a>
+        <a href="#">Send us Email</a>
+    </div>
+  </div>
+</body>
+</html>
