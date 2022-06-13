@@ -1,0 +1,79 @@
+* {
+    text-decoration: none;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+#wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 800px;
+  margin: 100px auto;
+}
+#header {
+  margin-bottom: 50px;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(200, 200, 200);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+#nav p {
+  font-size: 9px;
+}
+#main {
+  display: flex;
+}
+#aside {
+  margin-right: 15px;
+}
+.text {
+  font-size: 14px;
+}
+.js {
+  font-size: 12px;
+}
+span {
+  color: red;
+}
+#mail {
+  border: 1px solid rgb(200, 200, 200); width: 40px; height: 20px;
+}
+#phone {
+  border: 1px solid rgb(200, 200, 200); width: 50px; height: 24px;
+}
+input {
+  border: 1px solid rgb(200, 200, 200); width: 180px; height: 20px;
+}
+.phone {
+  border: 1px solid rgb(200, 200, 200); width: 55px; height: 20px;
+}
+.text1 {
+  margin-bottom: 18px;
+}
+.text2 {
+  margin-top: 2px;
+}
+.text3 {
+  margin-top: 8px;
+  margin-bottom: 17px;
+}
+#footer {
+  margin-top: 20px;
+  vertical-align: middle;
+}
+#check {
+  width: 15px;
+  height: 12px;
+  margin-bottom: 15px;
+}
+#sign {
+  width: 280px;
+  height: 45px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #92B4EC;
+  color: white;
+}
